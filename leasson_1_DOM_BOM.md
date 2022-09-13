@@ -85,3 +85,33 @@ Examples of BOM objects:
     9. Пример по селектору значения аттрибута
     `<elem>.querySelectorAll("[data-something = '56']")`
     RETURN: если есть элементы внутри: NodeList
+
+2. `<elem>.getElementById()`
+
+    || Параметры
+
+    * id || Строка, содердащая значение ID. Пишеться уже без решетки. И так понятно, что ID
+
+    || Пример использования
+
+    1. ID
+    `<elem>.getElementById('something')`
+    RETURN: если есть элементы внутри: NodeList
+
+3. `<elem>.getElementsBy***()`
+
+    || ***
+
+    1. TagName | Поиск по тегу, допустим: div
+    2. ClassName
+    3. ByName
+
+    || Параметры
+
+    * данные для поиска || Строка, содердащая значение. Пишеться без дополнительных символов.
+
+    || Пример использования
+
+    1. ClassName
+    `<elem>.getElementsByClassName('something')`
+    RETURN: если есть элементы внутри: NodeList
