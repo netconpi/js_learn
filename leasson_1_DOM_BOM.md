@@ -1,4 +1,7 @@
+
 # DOM | BOM
+
+Превью: Вся информация по BOM, методы поиска в DOM и что это такое.
 
 ## BOM | browser object model
 
