@@ -41,6 +41,7 @@ Examples of BOM objects:
 ## DOM | document object model
 
 1. `<elem>.querySelectorAll()` (1 and more) | `<elem>.querySelector()` (warn: 1 item)
+
     || Параметры
 
     * selector || Строка, содердащая 1 или более слекторов для поиска. Строка должна быть сформариована в CSS стиле; иначе, SyntaxError будет получена.
