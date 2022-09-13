@@ -114,4 +114,16 @@ Examples of BOM objects:
 
     1. ClassName
     `<elem>.getElementsByClassName('something')`
-    RETURN: если есть элементы внутри: NodeList
+    RETURN: если есть элементы внутри: HTMLCollection
+
+4. `<elem>.closest(css)`
+
+    || Параметры
+
+    * CSS-Селекторы || см. querySelectorAll()
+
+    || Пример использования
+
+    1. Поиск ближайщего предка, который соответсвует классу.
+    `<elem>.closest('.css')`
+    RETURN: HTML Element
