@@ -1,8 +1,8 @@
+# DOM | BOM
 
-# DOM | BOM \n
+## BOM | browser object model
 
-BOM -- browser object model \n
-Examples of BOM objects: \n
+Examples of BOM objects:
 
 1. Navigator
     * Объект navigator даёт информацию о самом браузере и операционной системе.
@@ -38,4 +38,8 @@ Examples of BOM objects: \n
     * Создает HTTP запрос с целью обмена данными между сайтом и сервером.
     [MSDN: XMLHttp](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest#types_of_requests)
 
-DOM -- document object model \n
+## DOM | document object model
+
+Just all in code.
+|| `<elem>.querySelectorAll()`
+
