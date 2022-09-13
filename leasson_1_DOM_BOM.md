@@ -40,6 +40,47 @@ Examples of BOM objects:
 
 ## DOM | document object model
 
-Just all in code.
-|| `<elem>.querySelectorAll()`
+1. `<elem>.querySelectorAll()` (1 and more) | `<elem>.querySelector()` (warn: 1 item)
+    || Параметры
 
+    * selector || Строка, содердащая 1 или более слекторов для поиска. Строка должна быть сформариована в CSS стиле; иначе, SyntaxError будет получена.
+
+    || Пример использования
+
+    1. Пример по селектору класса
+    `<elem>.querySelectorAll('.something')`
+    RETURN: если есть элементы внутри: NodeList
+
+    2. Пример по селектору тэга
+    `<elem>.querySelectorAll('div')`
+    RETURN: если есть элементы внутри: NodeList
+
+    3. Пример по селектору тэга и класса
+    `<elem>.querySelectorAll('div.something')`
+    RETURN: если есть элементы внутри: NodeList
+
+    4. Пример по тегу первого уровня вложенности
+    `<elem>.querySelectorAll('.something>li')`
+    Примечание как работает: допустим есть див с классом something, все елементы дочерние li будут возвращены в виде NodeList
+    RETURN: если есть элементы внутри: NodeList
+
+    5. Пример по селектору нескольких классов
+    `<elem>.querySelectorAll('.something, .something2')`
+    RETURN: если есть элементы внутри: NodeList
+
+    6. Пример по селектору вложенных классов
+    `<elem>.querySelectorAll('.something .something2')`
+    Примечание: Будет искать по второму, без контекста. Использовать аккуратно.
+    RETURN: если есть элементы внутри: NodeList
+
+    7. Пример по селектору ID
+    `<elem>.querySelectorAll('#something_id')`
+    RETURN: если есть элементы внутри: NodeList
+
+    8. Пример по селектору аттрибута
+    `<elem>.querySelectorAll('[data-something]')`
+    RETURN: если есть элементы внутри: NodeList
+
+    9. Пример по селектору значения аттрибута
+    `<elem>.querySelectorAll("[data-something = '56']")`
+    RETURN: если есть элементы внутри: NodeList
